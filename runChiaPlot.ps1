@@ -1,9 +1,9 @@
 Param(
-    $plotterPath="C:\Users\lisin\AppData\Local\chia-blockchain\app-1.1.2\resources\app.asar.unpacked\daemon\chia.exe",
+    $plotterPath="$Env:USERPROFILE\AppData\Local\chia-blockchain\app-1.1.2\resources\app.asar.unpacked\daemon\chia.exe",
     $tempPath="C:\chia\temp",
     $destenationPath='C:\chia\complete',
-    $keyProcess="f00x",
-    $waletNumber=3534245359,
+    $keyProcess="default",
+    $waletNumber=000000,
     $thisFolder=(Split-Path -Parent $MyInvocation.MyCommand.Path),
     $logFolder=(Join-Path -Path $thisFolder -ChildPath "log"),
     $tread=4,
